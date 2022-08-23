@@ -9,6 +9,19 @@
   "author": "aryandhiariefwin",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.6.0"
+    "@badeball/cypress-cucumber-preprocessor": "^12.1.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "cypress": "^10.6.0",
+    "esbuild": "^0.15.5"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/e2e/cucumber-test/**/*.{js,ts}",
+    "filterSpecs": true,
+    "omitFiltered": true,
+    "html": {
+      "enabled": true,
+      "output": "cypress/reports/index-default.html"
+    }
   }
 }
