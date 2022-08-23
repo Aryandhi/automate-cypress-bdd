@@ -1,0 +1,14 @@
+{
+  "name": "automate-cypress-bdd",
+  "version": "1.0.0",
+  "description": "Automation test use cypress with bdd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aryandhiariefwin",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.6.0"
+  }
+}

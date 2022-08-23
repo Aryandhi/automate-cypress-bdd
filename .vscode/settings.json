@@ -1,0 +1,19 @@
+{
+  "cucumberautocomplete.steps": [
+      "cypress/e2e/cucumber-test/**/*.js"
+  ],
+  "cucumberautocomplete.strictGherkinCompletion": true,
+  "cucumberautocomplete.syncfeatures": "cypress/e2e/cucumber-test/*.feature",
+  "[javascript]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "files.exclude": {
+      "**/.classpath": true,
+      "**/.project": true,
+      "**/.settings": true,
+      "**/.factorypath": true
+  },
+  "cucumberautocomplete.pages": {
+
+  }
+}
