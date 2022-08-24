@@ -4,7 +4,12 @@
   "description": "Automation test use cypress with bdd",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx cypress run",
+    "cypress:open": "npx cypress open",
+    "delete:reportFolder": "rm -rf cypress/reports/ && mkdir cypress/reports/",
+    "delete:reportFolder:win": "rmdir cypress/reports/ ; mkdir cypress/reports/",
+    "convert:Json": "more cucumber-messages.ndjson | cucumber-json-formatter-win.exe > cypress/reports/cucumber-results.json",
+    "reporter": "npm run delete:reportFolder:win ; npm run convert:Json ; node cypress/support/reporter"
   },
   "author": "aryandhiariefwin",
   "license": "ISC",
@@ -12,6 +17,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^12.1.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
     "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "chai": "^4.3.6",
     "cypress": "^10.6.0",
     "esbuild": "^0.15.5"
   },
