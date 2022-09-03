@@ -128,7 +128,7 @@ Feature: Promotion Page
 ### Video Testing Promotionspage
 [Video Testing Promotionspage](https://drive.google.com/file/d/1mA5xiDX9Zc1tJxCQhYvLxO3_2usOF69X/view?usp=sharing)
 ## 👩‍💻 Report index-default.html
-[report](https://github.com/Aryandhi/automate-cypress-bdd/blob/master/cypress/reports/index-default.html)
+[preview report](https://aryandhi.github.io/automate-cypress-bdd/cypress/reports/index-default.html)
 ## 👩‍💻 Summary
 ## Installation
 
